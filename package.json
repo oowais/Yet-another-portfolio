@@ -10,8 +10,15 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@iconify-json/carbon": "^1.1.27",
+    "@iconify-json/emojione": "^1.1.10",
+    "@iconify-json/mdi": "^1.1.64",
     "nuxt": "^3.9.0",
+    "unplugin-icons": "^0.18.1",
     "vue": "^3.4.5",
     "vue-router": "^4.2.5"
+  },
+  "dependencies": {
+    "@nuxt/ui": "^2.11.1"
   }
 }
