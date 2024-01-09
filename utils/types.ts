@@ -5,7 +5,7 @@ type ProjectInfoType = {
   desc?: string;
   link?: string;
   languages?: string[];
-  icon?: string;
+  icon: string;
 };
 
 export type { ProjectInfoType };
