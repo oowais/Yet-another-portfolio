@@ -1,6 +1,25 @@
-import type { UIcon } from '#build/components';
+<script setup lang="ts">
+const skills = ref([
+  "Vue",
+  "Typescript",
+  "Node.js",
+  "Vuetify",
+  "Javascript",
+  "Pyhton",
+  "Rest",
+  "Nuxt",
+  "REST",
+  "Django",
+  "Angular",
+  "Java",
+  "Docker",
+  "SQL",
+  "Flask",
+]);
+</script>
+
 <template>
-  <div class="card">
+  <div class="card w-10/12">
     <div class="content shadow-2xl">
       <div class="back bg-primary-400 dark:bg-primary-950">
         <div class="back-content bg-primary-400 dark:bg-primary-950">
@@ -10,9 +29,9 @@ import type { UIcon } from '#build/components';
             width="96"
             height="96"
           />
-          <strong class="text-primary-900 dark:text-primary-100"
-            >Interests & Skills</strong
-          >
+          <strong class="text-primary-900 dark:text-primary-100">
+            Skills & Interests
+          </strong>
           <p class="text-xs text-primary-900 dark:text-primary-100">
             Hover me!
           </p>
@@ -26,43 +45,16 @@ import type { UIcon } from '#build/components';
         </div>
 
         <div class="front-content">
-          <small class="badge">Pasta</small>
+          <div class="flex flex-wrap gap-1">
+            <small v-for="skill in skills" class="badge">{{ skill }}</small>
+          </div>
           <div class="description">
             <div class="title">
               <p class="title">
-                <strong>Spaguetti Bolognese</strong>
+                <strong>More to learn...</strong>
               </p>
-              <svg
-                fill-rule="nonzero"
-                height="15px"
-                width="15px"
-                viewBox="0,0,256,256"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g
-                  style="mix-blend-mode: normal"
-                  text-anchor="none"
-                  font-size="none"
-                  font-weight="none"
-                  font-family="none"
-                  stroke-dashoffset="0"
-                  stroke-dasharray=""
-                  stroke-miterlimit="10"
-                  stroke-linejoin="miter"
-                  stroke-linecap="butt"
-                  stroke-width="1"
-                  stroke="none"
-                  fill-rule="nonzero"
-                  fill="#20c997"
-                >
-                  <g transform="scale(8,8)">
-                    <path d="M25,27l-9,-6.75l-9,6.75v-23h18z"></path>
-                  </g>
-                </g>
-              </svg>
             </div>
-            <p class="card-footer">30 Mins &nbsp; | &nbsp; 1 Serving</p>
+            <!-- <p class="card-footer">30 Mins &nbsp; | &nbsp; 1 Serving</p> -->
           </div>
         </div>
       </div>
@@ -73,8 +65,7 @@ import type { UIcon } from '#build/components';
 <style scoded>
 .card {
   overflow: visible;
-  width: 190px;
-  height: 254px;
+  height: 284px;
 }
 
 .content {
@@ -170,7 +161,6 @@ import type { UIcon } from '#build/components';
   padding: 2px 10px;
   border-radius: 10px;
   backdrop-filter: blur(2px);
-  width: fit-content;
 }
 
 .description {
@@ -194,7 +184,6 @@ import type { UIcon } from '#build/components';
 }
 
 .card-footer {
-  color: #ffffff88;
   margin-top: 5px;
   font-size: 8px;
 }
