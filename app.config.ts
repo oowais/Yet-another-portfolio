@@ -6,5 +6,8 @@ export default defineAppConfig({
     button: {
       default: { variant: "soft" },
     },
+    icons: {
+      dynamic: true,
+    },
   },
 });

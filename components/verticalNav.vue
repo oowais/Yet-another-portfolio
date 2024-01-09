@@ -1,11 +1,13 @@
+<template>
+  <UVerticalNavigation :links="links">
+    <template #icon="{ link }">
+      <UIcon :name="link.icon" />
+    </template>
+  </UVerticalNavigation>
+</template>
+
 <script setup lang="ts">
 const links = [
-  {
-    label: "Profile",
-    avatar: {
-      src: "https://avatars.githubusercontent.com/u/6773030?s=400&u=39f22bbd75156d2e5a5be26e4d0118a0e20a7c70&v=4",
-    },
-  },
   {
     label: "Installation",
     icon: "i-heroicons-home",
@@ -23,7 +25,3 @@ const links = [
   },
 ];
 </script>
-
-<template>
-  <UVerticalNavigation :links="links" />
-</template>
