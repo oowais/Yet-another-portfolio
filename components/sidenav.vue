@@ -1,4 +1,3 @@
-import type hoverCardVue from './hoverCard.vue';
 <template>
   <div class="flex flex-wrap w-full h-screen">
     <div class="w-1/12 bg-primary-400 dark:bg-primary-950"></div>
@@ -6,7 +5,6 @@ import type hoverCardVue from './hoverCard.vue';
       <div class="flex flex-col items-center h-screen space-x-4 p-2 mb-5">
         <div class="w-full flex justify-center items-center rounded p-5">
           <UAlert
-            description="I am web dev! My current mojo is Vue and Nuxt!"
             :avatar="{
               src: 'https://avatars.githubusercontent.com/u/6773030?v=4',
             }"

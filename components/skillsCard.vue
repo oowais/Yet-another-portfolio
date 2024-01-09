@@ -200,14 +200,14 @@ const skills = ref([
   width: 90px;
   height: 90px;
   border-radius: 50%;
-  background-color: #ffbb66;
+  background-color: green;
   position: relative;
   filter: blur(15px);
   animation: floating 2600ms infinite linear;
 }
 
 #bottom {
-  background-color: #ff8866;
+  background-color: teal;
   left: 50px;
   top: 0px;
   width: 150px;
@@ -216,7 +216,7 @@ const skills = ref([
 }
 
 #right {
-  background-color: #ff2233;
+  background-color: yellow;
   left: 160px;
   top: -80px;
   width: 30px;
