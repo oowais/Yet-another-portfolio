@@ -1,7 +1,7 @@
 <template>
   <UAlert
     id="projects"
-    class="shadow-2xl"
+    class="shadow-2xl mt-4"
     icon="i-carbon-app"
     title="Projects"
   />

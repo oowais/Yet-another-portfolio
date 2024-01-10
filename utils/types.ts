@@ -9,9 +9,11 @@ type ProjectInfoType = {
 };
 
 type WorkInfoType = {
-  title: string;
+  key: string;
+  label: string;
   link: string;
   date: string;
+  title: string;
   skills: string[];
   info: string[];
 };

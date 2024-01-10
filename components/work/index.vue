@@ -1,11 +1,22 @@
 <template>
-  <UAlert class="shadow-2xl" icon="i-mdi-company" title="Work Experience" />
+  <UAlert
+    class="shadow-2xl mt-10 mb-4"
+    icon="i-mdi-company"
+    title="Work Experience"
+  />
+  <UTabs :items="workInfo" class="w-full">
+    <template #item="{ item }">
+      <WorkCard :work="item" />
+    </template>
+  </UTabs>
 </template>
 
 <script setup lang="ts">
 const workInfo = ref<WorkInfoType[]>([
   {
+    key: "einhundert",
     title: "Fronend Developer",
+    label: "Einhundert Energie",
     link: "https://einhundert.de/",
     date: "Dec 2021 - Current",
     skills: ["Vue", "Typescript", "Vuetifty", "Node.js", "Python"],
@@ -13,12 +24,15 @@ const workInfo = ref<WorkInfoType[]>([
       "Developed and maintained web app for internal administrative purposes",
       "Developed and maintained web app for external customers",
       "Created python scripts in django for batch CRUD operations",
+      "Created automated PDF from using Python libararies",
       "Development and deployment for web apps",
       "And apparently I am not good at writing stuff like this anymore T.T",
     ],
   },
   {
+    key: "fraunhofer",
     title: "Student Research Scientist",
+    label: "Fraunhofer FKIE",
     link: "https://www.fkie.fraunhofer.de/",
     date: "Sep 2018 - Sep 2021",
     skills: [
@@ -41,7 +55,9 @@ const workInfo = ref<WorkInfoType[]>([
     ],
   },
   {
+    key: "tcs",
     title: "Systems Engineer",
+    label: "Tata Consultancy Services",
     link: "https://www.tcs.com/",
     date: "Aug 2014 - Oct 2017",
     skills: [
@@ -67,7 +83,9 @@ const workInfo = ref<WorkInfoType[]>([
     ],
   },
   {
+    key: "dion",
     title: "Computer Engineer (Trainee)",
+    label: "Dion Global Solutions",
     link: "https://www.dionglobal.com/",
     date: "May 2013 - Jun 2013",
     skills: ["Java", "Oracle databse"],
@@ -79,4 +97,3 @@ const workInfo = ref<WorkInfoType[]>([
   },
 ]);
 </script>
-<style scoped></style>
