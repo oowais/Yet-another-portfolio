@@ -1,27 +1,37 @@
 <template>
-  <UVerticalNavigation :links="links">
-    <template #icon="{ link }">
-      <UIcon :name="link.icon" />
-    </template>
-  </UVerticalNavigation>
+  <UVerticalNavigation
+    :links="links"
+    :ui="{
+      base: 'group block border-s -ms-px lg:leading-6 before:hidden',
+      padding: 'p-0 ps-4',
+      rounded: '',
+      ring: '',
+      active:
+        'text-primary-700 dark:text-primary-400 border-current font-semibold',
+      inactive:
+        'border-transparent hover:border-gray-400 dark:hover:border-gray-500 text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300',
+    }"
+  />
 </template>
 
 <script setup lang="ts">
 const links = [
   {
-    label: "Installation",
-    icon: "i-heroicons-home",
-    to: "#edu",
+    label: "Github",
+    to: "https://github.com/oowais",
+    target: "_blank",
   },
   {
-    label: "Vertical Navigation",
-    icon: "i-heroicons-chart-bar",
-    to: "#work",
+    label: "Projects",
+    to: "#projects",
   },
   {
-    label: "Command Palette",
-    icon: "i-heroicons-command-line",
-    to: "#skill",
+    label: "Work Experience",
+    to: "#12",
+  },
+  {
+    label: "Education",
+    to: "#13",
   },
 ];
 </script>
