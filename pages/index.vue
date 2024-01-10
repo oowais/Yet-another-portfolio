@@ -8,9 +8,8 @@
       aria-label="Theme"
       @click="isDark = !isDark"
     />
-    <Project />
-    <div id="12" class="h-screen">12</div>
-    <div id="13" class="h-screen">13</div>
+    <Projects />
+    <Work id="work" class="mt-6" />
   </UContainer>
 </template>
 

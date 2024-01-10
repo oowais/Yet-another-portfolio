@@ -1,8 +1,13 @@
 <template>
-  <UAlert icon="i-carbon-app" title="Projects" />
-  <div id="projects" class="grid grid-cols-3 gap-4">
+  <UAlert
+    id="projects"
+    class="shadow-2xl"
+    icon="i-carbon-app"
+    title="Projects"
+  />
+  <div class="grid grid-cols-3 gap-4">
     <template v-for="proj in projects">
-      <ProjectCard :project="proj" />
+      <ProjectsCard :project="proj" />
     </template>
   </div>
 </template>

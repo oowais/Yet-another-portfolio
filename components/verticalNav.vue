@@ -28,7 +28,7 @@ const links = [
   },
   {
     label: "Work Experience",
-    to: "#12",
+    to: "#work",
   },
   {
     label: "Education",

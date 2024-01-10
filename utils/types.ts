@@ -8,4 +8,12 @@ type ProjectInfoType = {
   icon: string;
 };
 
-export type { ProjectInfoType };
+type WorkInfoType = {
+  title: string;
+  link: string;
+  date: string;
+  skills: string[];
+  info: string[];
+};
+
+export type { ProjectInfoType, WorkInfoType };
