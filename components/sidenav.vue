@@ -22,6 +22,10 @@
     <div class="w-8/12">
       <slot />
     </div>
-    <div class="w-1/12 bg-primary-400 dark:bg-primary-950"></div>
+    <div class="w-1/12 bg-primary-400 dark:bg-primary-950">
+      <div class="fixed right-5 top-5">
+        <ThemeSwitch />
+      </div>
+    </div>
   </div>
 </template>
