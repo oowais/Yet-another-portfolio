@@ -13,7 +13,7 @@
             title="Hey there!"
           />
         </div>
-        <verticalNav class="pt-6" />
+        <verticalNav class="pt-6 w-full pl-10" />
         <div class="flex-1"></div>
         <skillsCard />
       </div>

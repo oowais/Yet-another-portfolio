@@ -2,7 +2,7 @@
   <UVerticalNavigation
     :links="links"
     :ui="{
-      base: 'group block border-s -ms-px lg:leading-6 before:hidden',
+      base: 'group block border-s -ms-px lg:leading-8 before:hidden',
       padding: 'p-0 ps-4',
       rounded: '',
       ring: '',
@@ -17,9 +17,10 @@
 <script setup lang="ts">
 const links = [
   {
-    label: "Github",
+    label: " Github",
     to: "https://github.com/oowais",
     target: "_blank",
+    icon: "i-mdi-open-in-new",
   },
   {
     label: "Projects",

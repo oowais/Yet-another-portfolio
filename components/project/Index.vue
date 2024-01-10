@@ -1,4 +1,5 @@
 <template>
+  <UAlert icon="i-carbon-app" title="Projects" />
   <div id="projects" class="grid grid-cols-3 gap-4">
     <template v-for="proj in projects">
       <ProjectCard :project="proj" />
