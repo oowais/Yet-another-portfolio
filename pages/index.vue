@@ -1,6 +1,6 @@
 <template>
   <UContainer>
     <Projects />
-    <Work id="work" class="mt-6" />
+    <Work />
   </UContainer>
 </template>

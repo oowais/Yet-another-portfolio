@@ -1,5 +1,6 @@
 <template>
   <UAlert
+    id="work"
     class="shadow-2xl mt-10 mb-4"
     icon="i-mdi-company"
     title="Work Experience"
@@ -15,7 +16,7 @@
 const workInfo = ref<WorkInfoType[]>([
   {
     key: "einhundert",
-    title: "Fronend Developer",
+    title: "Frontend Developer",
     label: "Einhundert Energie",
     link: "https://einhundert.de/",
     date: "Dec 2021 - Current",

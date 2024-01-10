@@ -23,7 +23,7 @@
       <slot />
     </div>
     <div class="w-1/12 bg-primary-400 dark:bg-primary-950">
-      <div class="fixed right-5 top-5">
+      <div class="fixed right-5 bottom-5">
         <ThemeSwitch />
       </div>
     </div>
