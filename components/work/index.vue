@@ -5,11 +5,11 @@
     icon="i-mdi-company"
     title="Work Experience"
   />
-  <UTabs :items="workInfo" class="w-full">
-    <template #item="{ item }">
+  <div class="grid grid-cols-1 gap-4">
+    <template v-for="item in workInfo">
       <WorkCard :work="item" />
     </template>
-  </UTabs>
+  </div>
 </template>
 
 <script setup lang="ts">

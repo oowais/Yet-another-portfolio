@@ -24,7 +24,8 @@
     </div>
     <div class="w-1/12 bg-primary-400 dark:bg-primary-950">
       <div class="fixed right-5 bottom-5">
-        <ThemeSwitch />
+        <!-- <ThemeSwitch /> -->
+        <OldThemeSwitch />
       </div>
     </div>
   </div>
