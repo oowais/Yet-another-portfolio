@@ -4,3 +4,9 @@
     <Work />
   </UContainer>
 </template>
+
+<script setup lang="ts">
+useHead({
+  title: "~",
+});
+</script>

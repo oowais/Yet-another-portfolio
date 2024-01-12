@@ -20,7 +20,7 @@ const projects = ref<ProjectInfoType[]>([
     date: "Oct 2018 - Jan 2019",
     languages: ["Python", "C++"],
     desc: "Jaadu is an alien in the FabTerrarium, an open space with different animals/plants interacting with their environment or external users. It crawls in the terrarium reading the emotions of the other entities and displaying those emotions in itself. The materialization of Jaadu is a combination of Arduino, RasPI, 3D Modelling, Sensors, comm modes and LEDs.",
-    link: "https://github.com/oowais/Jaadu",
+    link: "https://oowais.github.io/Jaadu/",
     icon: "i-mdi-alien-outline",
   },
   {

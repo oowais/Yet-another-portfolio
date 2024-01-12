@@ -30,9 +30,9 @@ const links = [
     label: "Work Experience",
     to: "#work",
   },
-  {
-    label: "Education",
-    to: "#13",
-  },
+  // {
+  //   label: "Education",
+  //   to: "#13",
+  // },
 ];
 </script>
