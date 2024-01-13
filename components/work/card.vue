@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-full p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700"
+    class="w-full p-4 border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-900 dark:border-gray-700"
   >
     <h5 class="mb-2 text-2xl font-bold text-gray-900 dark:text-white">
       {{ work.title }}
@@ -25,7 +25,12 @@
       {{ info }}
     </li>
     <div class="flex gap-2 pt-4">
-      <UBadge v-for="skill in work.skills" color="primary" variant="outline">
+      <UBadge
+        v-for="skill in work.skills"
+        size="md"
+        color="primary"
+        variant="outline"
+      >
         {{ skill }}
       </UBadge>
     </div>

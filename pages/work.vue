@@ -1,7 +1,6 @@
 <template>
   <UAlert
-    id="work"
-    class="shadow-2xl mt-10 mb-4"
+    class="shadow-2xl my-4"
     icon="i-mdi-company"
     title="Work Experience"
   />
@@ -13,6 +12,8 @@
 </template>
 
 <script setup lang="ts">
+useHead({ title: "~Work" });
+
 const workInfo = ref<WorkInfoType[]>([
   {
     key: "einhundert",

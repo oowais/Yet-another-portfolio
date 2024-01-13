@@ -1,12 +1,5 @@
-<template>
-  <UContainer>
-    <Projects />
-    <Work />
-  </UContainer>
-</template>
+<template>Do something here</template>
 
 <script setup lang="ts">
-useHead({
-  title: "~",
-});
+useHead({ title: "~" });
 </script>

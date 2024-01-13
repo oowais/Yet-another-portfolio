@@ -6,6 +6,7 @@ type ProjectInfoType = {
   link?: string;
   languages?: string[];
   icon: string;
+  linkIcon?: string;
 };
 
 type WorkInfoType = {

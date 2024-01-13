@@ -17,22 +17,26 @@
 <script setup lang="ts">
 const links = [
   {
+    label: "Home",
+    to: "/",
+  },
+  {
+    label: "Projects",
+    to: "/projects",
+  },
+  {
+    label: "Work Experience",
+    to: "/work",
+  },
+  {
+    label: "Education",
+    to: "/education",
+  },
+  {
     label: " Github",
     to: "https://github.com/oowais",
     target: "_blank",
     icon: "i-mdi-open-in-new",
   },
-  {
-    label: "Projects",
-    to: "#projects",
-  },
-  {
-    label: "Work Experience",
-    to: "#work",
-  },
-  // {
-  //   label: "Education",
-  //   to: "#13",
-  // },
 ];
 </script>

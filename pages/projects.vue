@@ -1,10 +1,5 @@
 <template>
-  <UAlert
-    id="projects"
-    class="shadow-2xl mt-4"
-    icon="i-carbon-app"
-    title="Projects"
-  />
+  <UAlert class="shadow-2xl mt-4" icon="i-carbon-app" title="Projects" />
   <div class="grid grid-cols-3 gap-4">
     <template v-for="proj in projects">
       <ProjectsCard :project="proj" />
@@ -13,6 +8,8 @@
 </template>
 
 <script setup lang="ts">
+useHead({ title: "~Projects" });
+
 const projects = ref<ProjectInfoType[]>([
   {
     title: "Jaadu - An Alien in a Terrarium",
@@ -22,6 +19,7 @@ const projects = ref<ProjectInfoType[]>([
     desc: "Jaadu is an alien in the FabTerrarium, an open space with different animals/plants interacting with their environment or external users. It crawls in the terrarium reading the emotions of the other entities and displaying those emotions in itself. The materialization of Jaadu is a combination of Arduino, RasPI, 3D Modelling, Sensors, comm modes and LEDs.",
     link: "https://oowais.github.io/Jaadu/",
     icon: "i-mdi-alien-outline",
+    linkIcon: "i-mdi-open-in-new",
   },
   {
     title: "LabChain",
@@ -56,8 +54,9 @@ const projects = ref<ProjectInfoType[]>([
     date: "Nov 2021",
     languages: ["Angular", "Typescript"],
     desc: "Input any GitHub username to see their details. Live demo link is located in REAMDE of the GitHub repo.",
-    link: "https://github.com/oowais/coding-challenge-user-search",
+    link: "https://reverent-minsky-7484a4.netlify.app/",
     icon: "i-mdi-account-badge",
+    linkIcon: "i-mdi-open-in-new",
   },
   {
     title: "Sock it Up",
