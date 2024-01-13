@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col items-center bg-slate-100 dark:bg-gray-900 justify-center mt-5 border-l-4 border-indigo-500 shadow-xl rounded-xl p-2"
+    class="flex flex-col items-center bg-slate-100 dark:bg-gray-900 justify-center mt-5 border-l-4 border-indigo-500 rounded-xl p-2"
   >
     <UIcon
       :name="project.icon"

@@ -17,12 +17,8 @@
 <script setup lang="ts">
 const links = [
   {
-    label: "Home",
-    to: "/",
-  },
-  {
     label: "Projects",
-    to: "/projects",
+    to: "/",
   },
   {
     label: "Work Experience",

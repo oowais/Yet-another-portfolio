@@ -14,7 +14,7 @@
           />
         </div>
         <verticalNav class="pt-6 w-full pl-10" />
-        <div class="flex-1"></div>
+        <div class="flex-1" />
         <skillsCard />
       </div>
     </div>
@@ -23,10 +23,12 @@
       <slot />
     </div>
     <div class="w-1/12 bg-primary-400 dark:bg-primary-950">
-      <!-- <div class="fixed right-5 top-5">
-        <ThemeSwitch />
-        <OldThemeSwitch />
-      </div> -->
+      <div class="fixed right-5 top-5">
+        <ClientOnly>
+          <ThemeSwitch />
+          <!-- <OldThemeSwitch /> -->
+        </ClientOnly>
+      </div>
     </div>
   </div>
 </template>

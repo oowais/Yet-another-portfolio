@@ -1,9 +1,5 @@
 <template>
-  <UAlert
-    class="shadow-2xl my-4"
-    icon="i-mdi-company"
-    title="Work Experience"
-  />
+  <UAlert class="my-4" icon="i-mdi-company" title="Work Experience" />
   <div class="grid grid-cols-1 gap-4">
     <template v-for="item in workInfo">
       <WorkCard :work="item" />
